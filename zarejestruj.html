@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom mody</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zarejestruj.css">
 </head>
+
 <body>
     <header>
-        <a href="index.html"><h1>LOGO</h1></a>
+        <a href="index.html">
+            <h1>LOGO</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="#">Strona główna</a></li>
@@ -18,24 +23,40 @@
             </ul>
         </nav>
         <section>
-           <button onClick="window.location.href='logowanie.html'">Zaloguj</button>
+            <button onClick="window.location.href='logowanie.html'">Zaloguj</button>
             <button onClick="window.location.href='zarejestruj.html'">Zarejestruj</button>
         </section>
     </header>
     <main>
-        <h1>Formularz</h1>
-        <form id="formularz">
-            <label for="imie">Podaj imię: </label>
-            <input type="text" id="imie" required>
-            <label for="nazwisko">Podaj nazwisko: </label>
-            <input type="text" id="nazwisko" required>
-            <label for="email">Podaj email: </label>
-            <input type="email" name="email" id="email">
-            <button type="submit">Wyślij</button>
-        </form>
+        <section id="rejestracja">
+            <h1>Zarejestruj się</h1>
+            <form id="formularz">
+                <div class="inputForm">
+                    <label for="imie">Imię: </label>
+                    <input type="text" name="imie" id="imie" placeholder="Wpisz swoje imię">
+                </div>
+                <div class="inputForm">
+                    <label for="nazwisko">Nazwisko: </label>
+                    <input type="text" name="nazwisko" id="nazwisko" placeholder="Wpisz swoje nazwisko">
+                </div>
+                <div class="inputForm">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Wpisz swój email">
+                </div>
+                <div class="inputForm">
+                    <label for="haslo">Hasło: </label>
+                    <input type="password" id="haslo" required placeholder="Wpisz swoje hasło">
+                </div>
+                <div id="buttonSection">
+                    <button id="btnAnuluj" onClick="window.location.href='index.html'">Anuluj</button>
+                    <button id="btnSubmit" type="submit">Wyślij</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Wszelkie prawa zastrzeżone</p>
     </footer>
 </body>
+
 </html>
