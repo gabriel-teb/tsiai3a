@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom mody</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logowanie.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>LOGO</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Mężczyzna</a></li>
+                <li><a href="#">Kobieta</a></li>
+                <li><a href="#">Dziecko</a></li>
+            </ul>
+        </nav>
+        <section>
+            <button onClick="window.location.href='logowanie.html'">Zaloguj</button>
+            <button onClick="window.location.href='zarejestruj.html'">Zarejestruj</button>
+        </section>
+    </header>
+    <main>
+        <section id="logowanie">
+            <h1>Zaloguj się</h1>
+            <form id="formularz">
+                <div class="inputForm">
+                    <label for="email">Podaj email: </label>
+                    <input type="email" name="email" id="email" placeholder="Wpisz swój email">
+                </div>
+                <div class="inputForm">
+                    <label for="haslo">Podaj haslo: </label>
+                    <input type="password" id="haslo" required placeholder="Wpisz swoje hasło">
+                </div>
+                <div id="buttonSection">
+                    <button id="btnAnuluj" onClick="window.location.href='index.html'">Anuluj</button>
+                    <button id="btnSubmit" type="submit">Wyślij</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Wszelkie prawa zastrzeżone</p>
+    </footer>
+</body>
+
+</html>
