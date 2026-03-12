@@ -37,4 +37,15 @@ footer{
     justify-content: center;
 }
 
+.product{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    border: 1px solid rgb(223, 97, 24);
+    width: 600px;
+}
+
+.dane{
+    padding: 16px;
+}
 

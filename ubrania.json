@@ -1,0 +1,18 @@
+[{
+    "marka": "Nike",
+    "model": "Air Max 95",
+    "cena": "500 zł",
+    "obraz":"nike.jpg"
+},
+{
+    "marka": "Adidas",
+    "model": "Samba",
+    "cena": "450 zł",
+    "obraz":"adidas.jpg"
+},
+{
+    "marka": "Wólczanka",
+    "model": "Biała koszula we wzorki",
+    "cena": "300 zł",
+    "obraz":"wolczanka.jpg"
+}]
