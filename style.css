@@ -11,32 +11,6 @@ body{
 main{
     flex:1
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(223, 97, 24);
-}
-ul{
-     display: flex;
-     gap:8px;
-}
-li{
-    list-style-type:none;
-}
-a{
-    text-decoration: none;
-    color:aquamarine
-}
-footer{
-    background-color: rgb(223, 97, 24);
-    display: flex;
-    align-items: center;
-    color: azure;
-    height: 50px;
-    justify-content: center;
-}
-
 .product{
     display: flex;
     flex-direction: row;
