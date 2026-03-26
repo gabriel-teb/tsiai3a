@@ -7,26 +7,12 @@
     <title>Dom mody</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="zarejestruj.css">
+    <script src="../../components/header/header.js" defer></script>
+    <script src="../../components/footer/footer.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <h1>LOGO</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Strona główna</a></li>
-                <li><a href="#">Mężczyzna</a></li>
-                <li><a href="#">Kobieta</a></li>
-                <li><a href="#">Dziecko</a></li>
-            </ul>
-        </nav>
-        <section>
-            <button onClick="window.location.href='logowanie.html'">Zaloguj</button>
-            <button onClick="window.location.href='zarejestruj.html'">Zarejestruj</button>
-        </section>
-    </header>
+    <dom-mody-header></dom-mody-header>
     <main>
         <section id="rejestracja">
             <h1>Zarejestruj się</h1>
@@ -54,9 +40,7 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>Wszelkie prawa zastrzeżone</p>
-    </footer>
+    <dom-mody-footer></dom-mody-footer>
 </body>
 
 </html>

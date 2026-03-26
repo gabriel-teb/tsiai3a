@@ -14,18 +14,20 @@
 // })
 
 const ubrania = [{
+    "id": 1,
     "marka": "Nike",
     "model": "Air Max 95",
     "cena": "500 zł",
     "obraz":"nike.jpg"
 },
-{
+{    "id": 2,
     "marka": "Adidas",
     "model": "Samba",
     "cena": "450 zł",
     "obraz":"adidas.jpg"
 },
-{
+{   
+     "id": 3,
     "marka": "Wólczanka",
     "model": "Biała koszula we wzorki",
     "cena": "300 zł",
@@ -38,7 +40,6 @@ ubrania.forEach(ubranie =>
     {
             const product = document.createElement("section")
             product.className = "product"
-            product.
       
             product.innerHTML =  `
                 <img src="./assets/${ubranie.obraz}" alt="${ubranie.marka}" width="150px" height="150px">
@@ -51,7 +52,7 @@ ubrania.forEach(ubranie =>
                         <span class="cena">${ubranie.cena}</span>
                     </div>
                      <div class="btn-container">
-                        <button class="btn-kup">Kup teraz</button>
+                        <button class="btn-kup" onclick="window.location.href='C:/Users/gholubowicz/Desktop/tsiai3a/pages/product/product.html?id=${ubranie.id}'">Kup teraz</button>
                     </div>
                 </section>
             `
