@@ -1,18 +1,3 @@
-// const formularz = document.querySelector("#formularz")
-
-// formularz.addEventListener("submit", (e) =>{
-//     e.preventDefault()
-
-//     const imie = formularz.querySelector("#imie")
-//     const nazwisko = formularz.querySelector("#nazwisko")
-//     const email = formularz.querySelector('input[name="email"]')
-
-//     console.log(imie.value, nazwisko.value, email.value)
-//     imie.value = ""
-//     nazwisko.value = ""
-//     email.value = ""
-// })
-
 const ubrania = [{
     "id": 1,
     "marka": "Nike",
@@ -52,7 +37,7 @@ ubrania.forEach(ubranie =>
                         <span class="cena">${ubranie.cena}</span>
                     </div>
                      <div class="btn-container">
-                        <button class="btn-kup" onclick="window.location.href='C:/Users/gholubowicz/Desktop/tsiai3a/pages/product/product.html?id=${ubranie.id}'">Kup teraz</button>
+                        <button class="btn-kup" onclick="window.location.href='/pages/product/product.html?id=${ubranie.id}'">Kup teraz</button>
                     </div>
                 </section>
             `
